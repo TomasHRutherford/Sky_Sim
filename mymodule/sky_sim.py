@@ -1,6 +1,6 @@
 # Determine Andromeda location in ra/dec degrees
-from random import *
-from math import *
+import random
+import math
 # from wikipedia
 ra = '00:42:44.3'
 dec = '41:16:09'
@@ -26,8 +26,8 @@ def gen_pos(nrsrc, ra, dec):
     ras = []
     decs = []
     for i in range(nsrc):
-        ras.append(ra + uniform(-1,1))
-        decs.append(dec + uniform(-1,1))
+        ras.append(ra + random.uniform(-1,1))
+        decs.append(dec + random.uniform(-1,1))
     return ras, decs
 
 def save_file(ras, decs):
