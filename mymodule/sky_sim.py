@@ -39,5 +39,5 @@ def save_file(ras, decs):
 ra, dec = get_radec()
 
 nsrc = 1_000_000
-ras, decs = gen_pos(nsrc)
+ras, decs = gen_pos(nsrc, ra, dec)
 save_file(ras, decs)
