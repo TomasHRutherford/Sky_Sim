@@ -49,7 +49,16 @@ def save_file(ras, decs):
 def get_radec():
     """
     Generate the ra/dec coordinates of Andromeda
-    in decimal degrees.
+    in decimal degrees. 
+
+    Hours/degrees/seconds values are taken from wikipedia.
+
+    Returns
+    -------
+    ra
+        The position of the centre of Andromeda on the sky in Right Ascension, given in degrees.
+    dec
+        The position of the centre of Andromeda on the sky in Declination, given in degrees.
     """
     # from wikipedia
     andromeda_ra = '00:42:44.3'
